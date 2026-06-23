@@ -6,8 +6,8 @@
 // @match        https://courses.online.umich.edu/courses/*
 // @match        https://umich.instructure.com/courses/*
 // @run-at       document-idle
-// @updateURL    https://raw.githubusercontent.com/Stealthmoosegoose/tampermonkey/main/canvas-highlight-broken-links.user.js
-// @downloadURL  https://raw.githubusercontent.com/Stealthmoosegoose/tampermonkey/main/canvas-highlight-broken-links.user.js
+// @updateURL    https://raw.githubusercontent.com/Stealthmoosegoose/tampermonkey-public/main/canvas-highlight-broken-links.user.js
+// @downloadURL  https://raw.githubusercontent.com/Stealthmoosegoose/tampermonkey-public/main/canvas-highlight-broken-links.user.js
 // @grant        GM_addStyle
 // @grant        GM_xmlhttpRequest
 // @connect      courses.online.umich.edu
