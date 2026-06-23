@@ -7,8 +7,8 @@
 // @match        https://courses.online.umich.edu/courses/*
 // @run-at       document-idle
 // @grant        none
-// @downloadURL  https://raw.githubusercontent.com/YOUR-ORG/YOUR-REPO/main/canvas-split-sync-nav.user.js
-// @updateURL    https://raw.githubusercontent.com/YOUR-ORG/YOUR-REPO/main/canvas-split-sync-nav.user.js
+// @downloadURL  https://raw.githubusercontent.com/Stealthmoosegoose/tampermonkey_public/main/canvas-split-sync-nav.user.js
+// @updateURL    https://raw.githubusercontent.com/Stealthmoosegoose/tampermonkey_public/main/canvas-split-sync-nav.user.js
 // ==/UserScript==
 
 (function () {
