@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Canvas accessibility check: install</title>
+<style>
+  :root{--bg:#ffffff;--text:#1f2328;--muted:#57606a;--line:#d0d7de;--blue:#00274c;--maize:#ffcb05;--panel:#f6f8fa}
+  @media (prefers-color-scheme:dark){:root{--bg:#0d1117;--text:#e6edf3;--muted:#9da7b3;--line:#30363d;--blue:#ffcb05;--maize:#00274c;--panel:#161b22}}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+  main{max-width:640px;margin:0 auto;padding:48px 20px 64px}
+  h1{font-size:28px;line-height:1.2;margin:0 0 8px}
+  h2{font-size:18px;margin:36px 0 8px}
+  p,li{color:var(--text)}
+  .lede{color:var(--muted);margin:0 0 28px}
+  .drag{display:inline-block;padding:14px 22px;border-radius:10px;background:var(--blue);color:var(--maize);font-weight:700;font-size:18px;text-decoration:none;cursor:grab;border:2px dashed transparent}
+  .drag:hover{border-color:var(--maize)}
+  .drag:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+  .hint{margin:12px 0 0;color:var(--muted);font-size:14px}
+  ol{padding-left:22px}
+  li{margin:6px 0}
+  kbd{font:13px ui-monospace,Menlo,monospace;background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:1px 5px}
+  .note{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:12px 16px;font-size:15px}
+  a{color:inherit}
+</style>
+</head>
+<body>
+<main>
+  <h1>Canvas accessibility check</h1>
+  <p class="lede">A bookmark that flags heading, alt text, link, table and embed problems on Canvas pages, Modules and the Pages list. It always runs the latest version, so you only install it once.</p>
+
+  <a class="drag" href="javascript:(()%3D%3E%7Bwindow.__a11yfOnDemand%3Dtrue%3Bconst%20s%3Ddocument.createElement('script')%3Bs.src%3D'https%3A%2F%2Fstealthmoosegoose.github.io%2Ftampermonkey-public%2Fcanvas-a11y-flagger%2Fcanvas-a11y-flagger.user.js%3Ft%3D'%2BDate.now()%3Bs.onerror%3D()%3D%3Ealert('A11y%20Flagger%20could%20not%20load.%20Check%20your%20connection%2C%20or%20ask%20Michael.')%3Bdocument.head.appendChild(s)%3B%7D)()%3B" onclick="alert('Drag this button to your bookmarks bar, then click it on a Canvas page.');return false;">A11y check</a>
+  <p class="hint">Drag the button to your bookmarks bar.</p>
+
+  <h2>Install</h2>
+  <ol>
+    <li>Show your bookmarks bar if it’s hidden: <kbd>⌘</kbd> <kbd>Shift</kbd> <kbd>B</kbd> on Mac, <kbd>Ctrl</kbd> <kbd>Shift</kbd> <kbd>B</kbd> on Windows. In Safari, choose View, then Show Favorites Bar.</li>
+    <li>Drag the A11y check button onto the bar.</li>
+    <li>Open a Canvas page, Modules or the Pages list and click the bookmark.</li>
+  </ol>
+
+  <h2>Using it</h2>
+  <ol>
+    <li>On a single page, a panel lists every issue. Click one to jump to it.</li>
+    <li>On Modules and the Pages list, each item gets a badge. Click a badge to see that item’s issues.</li>
+    <li>In the editor, use Canvas’s built-in Accessibility Checker instead.</li>
+  </ol>
+
+  <h2>Not covered</h2>
+  <p>Color contrast, video captions, reading order and attached files such as PDFs and slides. Check those by hand.</p>
+
+  <p class="note">Use Tampermonkey? <a href="https://raw.githubusercontent.com/Stealthmoosegoose/tampermonkey-public/main/canvas-a11y-flagger/canvas-a11y-flagger.user.js">Install the userscript</a> instead, and the check runs on its own every time you open a page.</p>
+  <p class="hint">Can’t drag? <a href="https://github.com/Stealthmoosegoose/tampermonkey-public/tree/main/canvas-a11y-flagger">See other install options</a>.</p>
+</main>
+</body>
+</html>
